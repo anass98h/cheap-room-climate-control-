@@ -29,9 +29,11 @@ if it's not i can view through the dashboard what's wrong and crack a window or 
 All of parts can be found on amazon nothing exotic here so dont worry i got them all in 37sensor kit and it costed 40 doller ecept the LoPy4 and Expansion board v3.1 you can buy them dircatly from pycom.io for 50 dollars
 
 ## Computer setup
-I'm used to VS code, but please **avoid** it. The plugin that's called PyMakr is fully broken at the time of publishing this tutorial. I wasted weeks trying to get it to work, not realizing it's broken, and after a lot of suffering, I realized that the plugin works on Atom 
-sorry for the rant. I just needed to ensure that you (the person replicating this at home) didn't waste as much time as I did. Now what you need to do is simple 
-you start by instaling Atom and Navigate to the Install page via Atom > Preferences > Install
+I'm used to VS code, but please **avoid** it. The plugin that's called PyMakr is fully broken at the time of publishing this tutorial. 
+I wasted weeks trying to get it to work, not realizing it's broken, and after a lot of suffering, I realized that the plugin works on Atom 
+sorry for the rant. I just needed to ensure that you (the person replicating this at home) didn't waste as much time as I did.
+Now what you need to do is simple 
+you start by instaling [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/) and Navigate to the Install page via Atom > Preferences > Install
 Search for Pymakr and select the official Pycom Pymakr Plugin
 you need this plugin to communicate with the pycom and upload your code 
 If you have any problems installing it you can follow this [Guide](https://docs.pycom.io/gettingstarted/software/atom/)
