@@ -24,5 +24,5 @@ if it's not i can view through the dashboard what's wrong and crack a window or 
 | Expansion board v3.1                                           |   x1  |Compatible with Pycom’s WiPy, LoPy, SiPy, FiPy, and GPy development boards. Needed to program and power the LoPy4 board.|<img src="imges/Expans.png" width="200" height="200" />|
 | Micro USB cable                                                |   x1  |Allows you to connect to your micropython with computer for programming.|<img src="imges/micorusb.jpg" width="200" height="150" />|
 | Breadboard                                                     |   x1  |A board wich you can make electical circuit without soldering|<img src="imges/breadboard.jpg" width="200" height="200" />|
-| motion sensor (hc-sr501)                            |   x1  |motion sensor|<img src="imges/download(2).jpg" width="200" height="160" />|
+| motion sensor (hc-sr501)                            |   x1  |motion sensor|<img src="imges/download%20(2).jpg" width="200" height="160" />|
 | Digital temperature and humidty sensor (DHT-11 with integrated resistance) |   x1  |Read the temprature and humidty|<img src="imges/dht11.jpg" width="200" height="200" />|
