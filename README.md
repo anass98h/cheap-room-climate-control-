@@ -26,3 +26,18 @@ if it's not i can view through the dashboard what's wrong and crack a window or 
 | Breadboard                                                     |   x1  |A board wich you can make electical circuit without soldering|<img src="imges/breadboard.jpg" width="200" height="200" />|
 | motion sensor (hc-sr501)                            |   x1  |motion sensor|<img src="imges/download%20(2).jpg" width="200" height="160" />|
 | Digital temperature and humidty sensor (DHT-11 with integrated resistance) |   x1  |Read the temprature and humidty|<img src="imges/dht11.jpg" width="200" height="200" />|
+All of parts can be found on amazon nothing exotic here so dont worry i got them all in 37sensor kit and it costed 40 doller ecept the LoPy4 and Expansion board v3.1 you can buy them dircatly from pycom.io for 50 dollars
+
+## Computer setup
+I'm used to VS code, but please **avoid** it. The plugin that's called PyMakr is fully broken at the time of publishing this tutorial. I wasted weeks trying to get it to work, not realizing it's broken, and after a lot of suffering, I realized that the plugin works on Atom 
+sorry for the rant. I just needed to ensure that you (the person replicating this at home) didn't waste as much time as I did. Now what you need to do is simple 
+you start by instaling Atom and Navigate to the Install page via Atom > Preferences > Install
+Search for Pymakr and select the official Pycom Pymakr Plugin
+you need this plugin to communicate with the pycom and upload your code 
+If you have any problems installing it you can follow this [Guide](https://docs.pycom.io/gettingstarted/software/atom/)
+
+Note that you might need to install dependencies programs like Node.js Atom will notify you if you need any on the bottom right corner of the screen. 
+
+
+**Device firmware update**
+if you are experiencing bugs or glitches especially with the IoT enviroment, Adafruit. consider updating your firmware by following this guide [here](https://docs.pycom.io/updatefirmware/device/).
