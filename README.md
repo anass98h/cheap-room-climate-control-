@@ -59,10 +59,15 @@ When flowing this tutorial try to connect each device at the time and then put t
 
 first the pycom
 ![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/pycomirl.jpg?raw=true)
+
 as you see there are four cables to connect to the pycom 
+
 Red from VIN to + on Breadboard  
+
 White from GND to - on Breadboard 
+
 purple from P23 to middle pin on motion sensor
+
 Black from P3 to left Pin on DHT 
 
 
@@ -103,6 +108,24 @@ last we have gray to - and Blue to + from the motion sensor
 
 
 
-In case the readings from the motion sensor come back always high then switch the gray and blue cables
+**In case the readings from the motion sensor come back always high then switch the gray and blue cables**
+
+
+This is still a development setup because I plan to add more functionality before the final deployment. Still, if you are satisfied with the functionality, I recommend making a small cardboard box.
+
+You will need to cut two holes, one for the DHT and one for the motion sensor, and also few needle holes for the led to shine through
+
+
+
+## platform 
+For this project, I chose Adafruit.io because the dashboard will scale better for phone screens than other alternatives like datacake.co because I'm planning on deploying this device in the bedroom, and I will use the dashboard most often on the phone.
+
+Adafruit.io is free and easy to implement thanks to their " in my opinion" excellent documentation. 
+
+This is a cloud-based platform, so it doesn't store all the data for a long time, but I don't feel this will be a limitation in this case. 
+
+If you plan on scaling this project up, you might need to pay for more data points per min and Unlimited dashboards.
+
+
 
 
