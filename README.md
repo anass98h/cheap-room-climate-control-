@@ -126,6 +126,51 @@ This is a cloud-based platform, so it doesn't store all the data for a long time
 
 If you plan on scaling this project up, you might need to pay for more data points per min and Unlimited dashboards.
 
+If you choose to use [io.adafruit](https://io.adafruit.com/)
+start by making a free account 
+
+![image](https://user-images.githubusercontent.com/24983326/183108095-1e58fdb3-80b1-4043-81e1-04538c440ca9.png)
+
+then you need to navigate to "feeds" and create three new Feeds, one for the temperature, one for humidity, and one for motion sensing. 
+
+![image](https://user-images.githubusercontent.com/24983326/183108158-dc7f0460-1d27-48f6-b03b-22047405d7e2.png)
+
+Next, you want to go to the dashboard tab and create a new dashboard. 
+
+![image](https://user-images.githubusercontent.com/24983326/183108357-2640b715-156f-468c-8d7d-0b034c416f79.png)
+
+Open your dashboard and click on the sitings icon on the top right side of the screen. Then from the menu, you need to click on  "Create New Block" here, and you can 
+
+create a visualization. I chose two graphs for the temperature and humidity and the status indicator for the motion sensor.
+
+But feel free to try other options to see what works best for you. Just make sure you connect it to the right feed.
+
+My dashboard ended up looking like this:
 
 
+![image](https://user-images.githubusercontent.com/24983326/183107946-7d1858dd-b5cf-401c-87f6-a97a0cca7cc6.png)
 
+##The code 
+
+You are alomst done !! 
+you need to add your user name and key that can be found by clicking on the key botten
+
+![image](https://user-images.githubusercontent.com/24983326/183109925-c631cf28-7ca2-40db-a198-05d86ebdfad6.png)
+
+
+now you need to grap the url of the feeds you created and through them in the code:
+
+```python=
+AIO_SERVER = "io.adafruit.com"
+AIO_PORT = 1883
+AIO_USER = "65yryr"
+AIO_KEY = "aio_bzPW21cqKB6QuVBrcYgvsm0QmyQP"
+AIO_TEMP_FEED = "65yryr/feeds/temp"
+AIO_humidity_FEED = "65yryr/feeds/humidity"
+AIO_working_FEED = "65yryr/feeds/working"
+```
+
+Dont forget to change the wifi info too!!
+
+
+##code
