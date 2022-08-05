@@ -36,7 +36,7 @@ sorry for the rant. I just needed to ensure that you (the person replicating thi
 
 Now what you need to do is simple:
 
-you start by instaling [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/) and Navigate to the Install page via Atom > Preferences > Install
+you start by installing [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/) and Navigate to the Install page via Atom > Preferences > Install
 
 Search for Pymakr and select the official Pycom Pymakr Plugin
 
@@ -44,8 +44,47 @@ you need this plugin to communicate with the pycom and upload your code
 
 If you have any problems installing it you can follow this [Guide](https://docs.pycom.io/gettingstarted/software/atom/)
 
-Note that you might need to install dependencies programs like Node.js Atom will notify you if you need any on the bottom right corner of the screen. 
+Note that you might need to install dependencies programs like[Node.js](https://nodejs.org/en/download/) Atom will notify you if you need any on the bottom right corner of the screen. 
 
 
 **Device firmware update**
-if you are experiencing bugs or glitches especially with the IoT enviroment, Adafruit. consider updating your firmware by following this guide [here](https://docs.pycom.io/updatefirmware/device/).
+if you are experiencing bugs or glitches, especially with the IoT environment, Adafruit. consider updating your firmware by following this guide [here](https://docs.pycom.io/updatefirmware/device/).
+
+
+## Putting everything together
+
+For this part of the tutorial, I will use the color of the cables to show what pin on each device do
+When flowing this tutorial try to connect each device at the time and then put them together like legos I found that this is the easiest way
+
+first the pycom
+![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/pycomirl.jpg?raw=true)
+as you see there are four cables to connect to the pycom 
+Red from VIN to + on Breadboard  
+White from GND to - on Breadboard 
+purple from P23 to middle pin on motion sensor
+Black from P3 to left Pin on DHT 
+
+DHT
+![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/dhtirl.jpg?raw=true)
+there are three cables to connect in this step 
+gray from the right pin to - on Breadboard 
+white from the middle pin to + on Breadboard  
+Black from left to P3 on the Pycom
+
+motion sensor 
+![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/motionirl.jpg?raw=true)
+there are three cables to connect in this step too
+Gray from the left pin to - on Breadboard 
+Blue from the right pin to + on Breadboard  
+Purple from the middle pin on the motion sensor to P23 on Pycom
+
+Breadboard 
+![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/powerirl.jpg?raw=true)
+on the Breadboard, the cables come in pairs 
+on the top, there are the Red to + and the white to - from the pycom
+then there is the gray to - and white to + from DHT
+last we have gray to - and Blue to + from the motion sensor 
+
+In case the readings from the motion sensor come back always high then switch the gray and blue cables
+
+
