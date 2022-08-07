@@ -227,9 +227,34 @@ Also, since this device is not meant to be moved one set up.
 
 The range of the wifi wasn't an issue, nor was the power consumption since it's meant to be connected to a power supply or a computer via USB 
 
-##Presenting the data
-
 MQTT protocol has been used to send the data since adafruit io has a ready to use library that was easy to implement you can find it on [their github page](https://github.com/adafruit/Adafruit_IO_Python)
 
 I must mention that adafuit also supports REST API and has libraries ready for it. 
 
+##Presenting the data
+As mentioned before, I used io.adafruit because it scales nicely on a mobile screen.
+
+For now, I have the temperature and humidity reading on a graph because I'm interested to see if there are any patterns throughout the day. Still, I might change it in the future for raw numbers for easier readability.
+
+I have also outlined the process of changing how the dashboard looks earlier and i encourage you to play around with the different options to find what works the best for you.
+
+![image](https://user-images.githubusercontent.com/24983326/183291148-b7236ef0-36af-4009-8895-257d1a61fa0f.png)
+
+For a free account, the data is saved for 30 days, but if you upgrade your account, you can keep the data for 60 days.
+
+As for me, I don't think that I will need data further than the 24 hours displayed on the dashboard graph.
+
+But if you want to see all the data that is stored, you can refer to the feed tab 
+
+##Finalizing the design
+![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/IMG_20220804_030602.jpg?raw=true)
+
+This was an exciting project, and I was motivated to finish it since I was reminded of it every time I walked into the bedroom.
+
+It might not be the prettiest device on earth, but I like the development look. I think it gives it more character than something bought in a store and leaves it open for more improvement in the future. I want to add a CO2 sensor when I find one for a reasonable price. 
+
+Also, it would be nice to add some relays to control a small lamb through ada fruit one sad fact is that I learned that I couldn't trust the labels on the sensors.
+
+I could only get them to work after some trial and error, and from want, I understand different sensors from the same manufacturer might have different pin layouts.
+
+Also, if you plan on building an IoT device, plan where and how it will be used before starting. I wanted to use data cake, but what I haven't  considered is how it scales on the phone screen, so I had to switch mid-way through the project.
