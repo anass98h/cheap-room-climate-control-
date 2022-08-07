@@ -174,6 +174,8 @@ Dont forget to change the wifi info too!!
 
 
 ##code
+
+
 In this part of the tutorial, I will highlight features of the code that I think the end user might want to change 
 
 I will start with the parameters that define when the led turns red 
