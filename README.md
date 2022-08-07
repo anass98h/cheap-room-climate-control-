@@ -174,3 +174,62 @@ Dont forget to change the wifi info too!!
 
 
 ##code
+In this part of the tutorial, I will highlight features of the code that I think the end user might want to change 
+
+I will start with the parameters that define when the led turns red 
+
+```python=
+
+def status(): # checking and alerting if the room is too hot or too humied
+    global tem
+    global hum
+    if tem >= 28 or tem <= 17:
+        pycom.rgbled(0x7f0000)
+    elif hum >= 50 or hum <= 20:
+        pycom.rgbled(0x7f0000)
+    else:
+        pycom.rgbled(0x007f00)
+
+```
+The "tem" variable is the one that define the temperture and its set by default between 28 and 17
+
+The "hum" variable is the one that define the humitity  and its set by default between 50% and 20%
+
+
+
+```python=
+while True: # the main loop
+    if motionsensor() == 1: # if motion is dedected
+        print("YES")
+        tempo()
+        send_temp()
+        status()
+        client.publish(topic=AIO_working_FEED, msg="YES")
+
+    else:
+        client.publish(topic=AIO_working_FEED, msg="NO")
+        status()
+        print("NO")
+```
+
+This function controls the behavior when detecting motion. It can be used to add functionality when motion is detected 
+
+by default is sends YES and the temperature and the humidity value to adafruit io
+
+
+##Transmeting the data/ connectivity
+
+The data is sent every time motion is detected. You can adjust the delay in the motion sensor using the dials on the motion sensor.[Guide](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/)
+
+For this project, I used wifi since its intended for indoor use, and I live far away from a city, and LoRa isn't available. 
+
+Also, since this device is not meant to be moved one set up. 
+
+The range of the wifi wasn't an issue, nor was the power consumption since it's meant to be connected to a power supply or a computer via USB 
+
+##Presenting the data
+
+MQTT protocol has been used to send the data since adafruit io has a ready to use library that was easy to implement you can find it on [their github page](https://github.com/adafruit/Adafruit_IO_Python)
+
+I must mention that adafuit also supports REST API and has libraries ready for it. 
+
