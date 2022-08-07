@@ -150,7 +150,7 @@ My dashboard ended up looking like this:
 
 ![image](https://user-images.githubusercontent.com/24983326/183107946-7d1858dd-b5cf-401c-87f6-a97a0cca7cc6.png)
 
-##The code 
+### The code 
 
 You are alomst done !! 
 you need to add your user name and key that can be found by clicking on the key botten
@@ -173,7 +173,7 @@ AIO_working_FEED = "65yryr/feeds/working"
 Dont forget to change the wifi info too!!
 
 
-##code
+## code
 
 
 In this part of the tutorial, I will highlight features of the code that I think the end user might want to change 
@@ -219,7 +219,7 @@ This function controls the behavior when detecting motion. It can be used to add
 by default is sends YES and the temperature and the humidity value to adafruit io
 
 
-##Transmeting the data/ connectivity
+## Transmeting the data/ connectivity
 
 The data is sent every time motion is detected. You can adjust the delay in the motion sensor using the dials on the motion sensor.[Guide](https://lastminuteengineers.com/pir-sensor-arduino-tutorial/)
 
@@ -233,7 +233,7 @@ MQTT protocol has been used to send the data since adafruit io has a ready to us
 
 I must mention that adafuit also supports REST API and has libraries ready for it. 
 
-##Presenting the data
+## Presenting the data
 As mentioned before, I used io.adafruit because it scales nicely on a mobile screen.
 
 For now, I have the temperature and humidity reading on a graph because I'm interested to see if there are any patterns throughout the day. Still, I might change it in the future for raw numbers for easier readability.
@@ -248,7 +248,7 @@ As for me, I don't think that I will need data further than the 24 hours display
 
 But if you want to see all the data that is stored, you can refer to the feed tab 
 
-##Finalizing the design
+## Finalizing the design
 ![alt text](https://github.com/anass98h/cheap-room-climate-control-/blob/main/imges/IMG_20220804_030602.jpg?raw=true)
 
 This was an exciting project, and I was motivated to finish it since I was reminded of it every time I walked into the bedroom.
